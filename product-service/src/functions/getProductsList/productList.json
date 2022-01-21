@@ -1,0 +1,66 @@
+[
+  {
+    "count": 4,
+    "description": "Наклейка для MacBook Миньёны",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80aa",
+    "price": 19.99,
+    "assetName": "C-LYF-M.jpg",
+    "title": "Миньёны"
+  },
+  {
+    "count": 8,
+    "description": "Наклейка для MacBook Pac-Man",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80bb",
+    "price": 15.99,
+    "assetName": "C-PAC-M.jpg",
+    "title": "Pac-Man"
+  },
+  {
+    "count": 15,
+    "description": "Наклейка для MacBook Улица сезам Cookie Monster (Коржик)",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80cc",
+    "price": 19.99,
+    "assetName": "C-SS-M.jpg",
+    "title": "Cookie Monster (Коржик)"
+  },
+  {
+    "count": 16,
+    "description": "Наклейка для MacBook WALL-E (ВАЛЛ-И)",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80dd",
+    "price": 14,
+    "assetName": "C-WE-M.jpg",
+    "title": "WALL-E (ВАЛЛ-И)"
+  },
+  {
+    "count": 23,
+    "description": "Наклейка для MacBook Bugs Bunny (Багз Банни)",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80ff",
+    "price": 15.99,
+    "assetName": "J14-bugs_bunny_W.jpg",
+    "title": "Bugs Bunny (Багз Банни)"
+  },
+  {
+    "count": 42,
+    "description": "Наклейка для MacBook Joker (Джокер)",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80fq",
+    "price": 19.99,
+    "assetName": "J57-joker_W.jpg",
+    "title": "Joker (Джокер)"
+  },
+  {
+    "count": 4,
+    "description": "Наклейка для MacBook Tigger (Тигра)",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80qw",
+    "price": 15.99,
+    "assetName": "J97-tigger_W.jpg",
+    "title": "Tigger (Тигра)"
+  },
+  {
+    "count": 8,
+    "description": "Наклейка для MacBook Deadpool (Дэдпул)",
+    "id": "7567ec4b-b10c-48c5-9345-fc73c48a80iu",
+    "price": 19.99,
+    "assetName": "J104-Deadpool_V6_W.jpg",
+    "title": "Deadpool (Дэдпул)"
+  }
+]
