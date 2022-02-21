@@ -1,0 +1,16 @@
+{
+  "presets": ["@babel/preset-typescript", "@babel/preset-env"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "transformFunctions": ["proxyquire", "resolvePath"],
+        "alias": {
+          "@libs/apiGateway": ["./src/libs/apiGateway.ts"],
+          "@libs/lambda": ["./src/libs/lambda.ts"],
+          "@libs/handlerResolver": ["./src/libs/handlerResolver.ts"]
+        }
+      }
+    ]
+  ]
+}

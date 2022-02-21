@@ -1,0 +1,26 @@
+{
+  "name": "bs-sticker-app-back",
+  "version": "0.0.1",
+  "description": "AWS lambda microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyznecSPM/bs-sticker-app-back.git"
+  },
+  "keywords": [
+    "aws",
+    "cloud",
+    "node.js",
+    "serverless",
+    "lambda"
+  ],
+  "author": "Emelianov D.O.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KyznecSPM/bs-sticker-app-back/issues"
+  },
+  "homepage": "https://github.com/KyznecSPM/bs-sticker-app-back#readme"
+}

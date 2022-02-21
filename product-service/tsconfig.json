@@ -1,20 +1,22 @@
 {
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "moduleResolution": "node",
+    "lib": ["dom", "es6", "es5"],
     "noUnusedLocals": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "noUnusedParameters": true,
     "removeComments": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "target": "ES2020",
+    "target": "es5",
     "outDir": "lib"
   },
   "include": ["src/**/*.ts", "serverless.ts"],
   "exclude": [
     "node_modules/**/*",
+    "./src/**/*.spec.ts",
     ".serverless/**/*",
     ".webpack/**/*",
     "_warmup/**/*",

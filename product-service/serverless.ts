@@ -1,12 +1,16 @@
 import type { AWS } from "@serverless/typescript";
 
-import getProductsList from "@functions/getProductsList";
+import getProducts from "@functions/getProducts";
 import getProductsById from "@functions/getProductsById";
 
 const serverlessConfiguration: AWS = {
   service: "product-service",
   frameworkVersion: "2",
-  plugins: ["serverless-esbuild"],
+  plugins: [
+    "serverless-auto-swagger",
+    "serverless-esbuild",
+    "serverless-offline",
+  ],
   provider: {
     name: "aws",
     runtime: "nodejs14.x",
@@ -22,9 +26,12 @@ const serverlessConfiguration: AWS = {
     lambdaHashingVersion: "20201221",
   },
   // import the function via paths
-  functions: { getProductsList, getProductsById },
+  functions: { getProducts, getProductsById },
   package: { individually: true },
   custom: {
+    "serverless-offline": {
+      noPrependStageInUrl: true,
+    },
     esbuild: {
       bundle: true,
       minify: false,

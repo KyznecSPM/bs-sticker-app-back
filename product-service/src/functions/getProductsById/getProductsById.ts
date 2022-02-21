@@ -1,13 +1,16 @@
 import type { APIGatewayProxyHandler } from "aws-lambda";
 import { formatJSONResponse } from "@libs/apiGateway";
 import { middyfyCors } from "@libs/lambda";
-import productList from "./productList.json";
+import { getProductsById } from "../../controllers/products";
 
-const getProductsById: APIGatewayProxyHandler = async (event) => {
+const getProductsByIdHandler: APIGatewayProxyHandler = async (event) => {
   const { productId } = event.pathParameters;
-  return formatJSONResponse(
-    productList.find((value) => value.id === productId)
-  );
+  try {
+    const response = formatJSONResponse(getProductsById(productId));
+    return response;
+  } catch (error) {
+    return formatJSONResponse(error?.message || "", 400);
+  }
 };
 
-export const handler = middyfyCors(getProductsById);
+export const handler = middyfyCors(getProductsByIdHandler);

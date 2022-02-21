@@ -1,2 +1,3 @@
 # bs-sticker-app-back
-Backend Node.js application in the AWS cloud S3 bucket
+
+Backend Lambda AWS Cloud Node.js microservice
