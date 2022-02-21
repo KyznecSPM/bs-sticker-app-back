@@ -6,7 +6,7 @@ import { getProductsById } from "../../controllers/products";
 const getProductsByIdHandler: APIGatewayProxyHandler = async (event) => {
   const { productId } = event.pathParameters;
   try {
-    const response = formatJSONResponse(getProductsById(productId));
+    const response = await formatJSONResponse(getProductsById(productId));
     return response;
   } catch (error) {
     return formatJSONResponse(error?.message || "", 400);

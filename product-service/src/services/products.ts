@@ -9,7 +9,7 @@ export class ProductsService {
   }
 
   async getAllProducts() {
-    await responseDelay(1000);
+    await responseDelay(3000);
     return productList;
   }
 }

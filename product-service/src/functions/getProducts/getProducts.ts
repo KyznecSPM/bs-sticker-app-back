@@ -4,8 +4,8 @@ import { getProducts } from "../../controllers/products";
 
 export const getProductsHandler = async () => {
   try {
-    const response = formatJSONResponse(getProducts());
-    return response;
+    const response = await getProducts();
+    return formatJSONResponse(response);
   } catch (error) {
     return formatJSONResponse(error?.message || "", 400);
   }
